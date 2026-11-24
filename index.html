@@ -55,10 +55,10 @@
 
   /* reel */
   .reel-wrap{margin-inline:calc(var(--gutter) * -1)}
-  .reel{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding-inline:var(--gutter);padding-bottom:14px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .reel{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding-inline:var(--gutter);scroll-padding-inline:var(--gutter);padding-bottom:14px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
   .reel::-webkit-scrollbar{display:none}
   .card{flex:none;width:clamp(228px,24vw,300px);scroll-snap-align:start;text-align:left}
-  .card .frame{position:relative;aspect-ratio:9/16;border-radius:10px;overflow:hidden;background:#000;border:1px solid var(--line);transition:transform .35s cubic-bezier(.2,.7,.2,1),border-color .2s}
+  .card .frame{display:block;position:relative;aspect-ratio:9/16;border-radius:10px;overflow:hidden;background:#000;border:1px solid var(--line);transition:transform .35s cubic-bezier(.2,.7,.2,1),border-color .2s}
   .card:hover .frame{transform:translateY(-4px);border-color:var(--line2)}
   .card video,.card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
   .card video{opacity:0;transition:opacity .4s}
@@ -107,6 +107,18 @@
   .compare td{color:var(--ink2)}
   .compare .us{background:rgba(242,193,78,.07);color:var(--ink);font-weight:500}
   .compare thead .us{color:var(--spark);background:rgba(242,193,78,.12)}
+  @media (max-width:640px){
+    .compare{min-width:0}
+    .compare thead{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+    .compare,.compare tbody,.compare tr,.compare tbody th{display:block}
+    .compare tr{padding:18px 18px 14px;border-bottom:1px solid var(--line)}
+    .compare tr:last-child{border-bottom:0}
+    .compare tbody th,.compare tr:last-child th{width:auto;padding:0 0 8px;border:0;font-size:16px}
+    .compare td,.compare tr:last-child td{display:grid;grid-template-columns:7.2em 1fr;gap:12px;align-items:baseline;padding:7px 0;border:0;font-size:15px}
+    .compare td::before{content:attr(data-label);font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--mute)}
+    .compare td.us,.compare tr:last-child td.us{margin:4px -10px 0;padding:9px 10px;border-radius:6px;background:rgba(242,193,78,.09)}
+    .compare td.us::before{color:var(--spark)}
+  }
 
   /* process */
   .steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--line)}
@@ -298,11 +310,11 @@
           <tr><th scope="col"><span class="sr">Compared on</span></th><th scope="col">Studio shoot</th><th scope="col">UK creator</th><th scope="col" class="us">Scintova</th></tr>
         </thead>
         <tbody>
-          <tr><th scope="row">One ad costs</th><td>Four figures</td><td>£150 to £350</td><td class="us">£100</td></tr>
-          <tr><th scope="row">Running it as a paid ad</th><td>Agreed with the talent</td><td>20 to 40% on top</td><td class="us">Included for 90 days</td></tr>
-          <tr><th scope="row">First ad in</th><td>About a month</td><td>After the product arrives</td><td class="us">A few days</td></tr>
-          <tr><th scope="row">You send</th><td>Product, crew, studio</td><td>The product itself</td><td class="us">A link and 3 or 4 photos</td></tr>
-          <tr><th scope="row">If you don't like it</th><td>Paid either way</td><td>Paid either way</td><td class="us">You don't pay</td></tr>
+          <tr><th scope="row">One ad costs</th><td data-label="Studio shoot">Four figures</td><td data-label="UK creator">£150 to £350</td><td data-label="Scintova" class="us">£100</td></tr>
+          <tr><th scope="row">Running it as a paid ad</th><td data-label="Studio shoot">Agreed with the talent</td><td data-label="UK creator">20 to 40% on top</td><td data-label="Scintova" class="us">Included for 90 days</td></tr>
+          <tr><th scope="row">First ad in</th><td data-label="Studio shoot">About a month</td><td data-label="UK creator">After the product arrives</td><td data-label="Scintova" class="us">A few days</td></tr>
+          <tr><th scope="row">You send</th><td data-label="Studio shoot">Product, crew, studio</td><td data-label="UK creator">The product itself</td><td data-label="Scintova" class="us">A link and 3 or 4 photos</td></tr>
+          <tr><th scope="row">If you don't like it</th><td data-label="Studio shoot">Paid either way</td><td data-label="UK creator">Paid either way</td><td data-label="Scintova" class="us">You don't pay</td></tr>
         </tbody>
       </table>
     </div>
