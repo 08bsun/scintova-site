@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Scintova | Video ads without the shoot | London</title>
+<meta name="description" content="Scintova makes scroll-stopping video ads from photos of your product. Real people, your real packaging, no shoot. Your first ad is free. Based in London.">
+<link rel="canonical" href="https://scintova.com/">
+<meta name="theme-color" content="#0E0D0B">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Scintova">
+<meta property="og:url" content="https://scintova.com/">
+<meta property="og:title" content="Scintova | Great video ads, without the shoot">
+<meta property="og:description" content="Video ads made from photos of your product. Your first ad is free. Based in London.">
+<meta property="og:image" content="https://scintova.com/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Scintova | Great video ads, without the shoot">
+<meta name="twitter:description" content="Video ads made from photos of your product. Your first ad is free. Based in London.">
+<meta name="twitter:image" content="https://scintova.com/assets/og.jpg">
+<link rel="preload" href="assets/fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/geist.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/site.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"Scintova","url":"https://scintova.com/","logo":"https://scintova.com/assets/icon-512.png","email":"hello@scintova.com","description":"AI video ad studio making ads from photos of your product.","address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"GB"},"founder":{"@type":"Person","name":"Bohan Sun"},"sameAs":["https://www.instagram.com/scintova/","https://www.tiktok.com/@scintova"]}
+</script>
+<style>
+  /* hero */
+  .hero{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(280px,.65fr);gap:clamp(28px,5vw,72px);align-items:end;padding-block:clamp(40px,7vw,96px) clamp(36px,5vw,64px)}
+  .hero h1{font-family:var(--serif);font-weight:500;font-size:clamp(56px,8.6vw,138px);line-height:.92;letter-spacing:-.035em;margin-top:22px}
+  .hero h1 em{font-style:italic;font-weight:400;color:var(--spark)}
+  .lede{max-width:56ch;margin-top:28px;font-size:clamp(17px,1.6vw,21px);line-height:1.5;color:var(--ink2);text-wrap:pretty}
+  .lede strong{color:var(--ink);font-weight:500}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+  .proof{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:28px;font-family:var(--mono);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink2)}
+  .proof li{display:inline-flex;align-items:center;gap:9px}
+  .proof svg{width:13px;height:13px;flex:none}
+  .phone{position:relative;aspect-ratio:9/16;width:100%;border-radius:16px;overflow:hidden;background:#000;box-shadow:0 30px 80px -30px rgba(0,0,0,.9),0 0 0 1px var(--line2)}
+  .phone video,.phone img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+  .phone .tag{position:absolute;left:12px;bottom:12px;display:flex;gap:8px;align-items:center;font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;background:rgba(14,13,11,.72);backdrop-filter:blur(8px);padding:7px 10px;border-radius:6px;color:var(--ink)}
+  .phone .tag i{width:6px;height:6px;border-radius:50%;background:var(--spark);display:inline-block}
+  @media (max-width:860px){.hero{grid-template-columns:1fr;align-items:start}.phone{max-width:320px}}
+
+  /* ticker */
+  .ticker{border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden;white-space:nowrap;padding-block:12px;margin-inline:calc(var(--gutter) * -1)}
+  .ticker-track{display:inline-flex;animation:ticker 48s linear infinite}
+  .ticker span{display:inline-flex;align-items:center;gap:18px;padding-inline:18px;font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink2)}
+  .ticker span::after{content:"";width:28px;height:1px;background:var(--line2);display:inline-block}
+  @keyframes ticker{to{transform:translateX(-50%)}}
+
+  /* reel */
+  .reel-wrap{margin-inline:calc(var(--gutter) * -1)}
+  .reel{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding-inline:var(--gutter);padding-bottom:14px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .reel::-webkit-scrollbar{display:none}
+  .card{flex:none;width:clamp(228px,24vw,300px);scroll-snap-align:start;text-align:left}
+  .card .frame{position:relative;aspect-ratio:9/16;border-radius:10px;overflow:hidden;background:#000;border:1px solid var(--line);transition:transform .35s cubic-bezier(.2,.7,.2,1),border-color .2s}
+  .card:hover .frame{transform:translateY(-4px);border-color:var(--line2)}
+  .card video,.card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+  .card video{opacity:0;transition:opacity .4s}
+  .card.playing video{opacity:1}
+  .card .play{position:absolute;right:10px;top:10px;width:34px;height:34px;border-radius:50%;background:rgba(14,13,11,.72);backdrop-filter:blur(6px);display:grid;place-items:center;border:1px solid rgba(255,255,255,.12)}
+  .card .play svg{width:12px;height:12px;fill:var(--ink);margin-left:2px}
+  .card .meta{display:grid;grid-template-columns:1fr auto;gap:6px 12px;padding-top:12px;align-items:baseline}
+  .card .meta .t{font-family:var(--serif);font-weight:500;font-size:20px;letter-spacing:-.01em}
+  .card .meta .b{font-family:var(--mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink2);grid-column:1}
+  .card .meta .d{font-family:var(--mono);font-size:11.5px;color:var(--mute);font-variant-numeric:tabular-nums}
+  .reel-note{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px 24px;margin-top:20px;font-family:var(--mono);font-size:12px;color:var(--mute);letter-spacing:.02em}
+  .reel-note p{max-width:62ch}
+  .arrows{display:flex;gap:8px}
+  .arrows button{width:44px;height:44px;border:1px solid var(--line2);border-radius:50%;display:grid;place-items:center;color:var(--ink2)}
+  .arrows button:hover{color:var(--ink);border-color:var(--ink)}
+  .arrows svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:1.6}
+
+  /* what you get */
+  .perks{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--line)}
+  .perk{padding:26px 26px 30px 0;border-bottom:1px solid var(--line);display:grid;gap:10px;align-content:start}
+  .perk:not(:nth-child(3n+1)){padding-left:26px;border-left:1px solid var(--line)}
+  .perk .n{font-family:var(--mono);font-size:12px;letter-spacing:.08em;color:var(--spark)}
+  .perk h3{font-size:19px;font-weight:600;letter-spacing:-.01em}
+  .perk p{color:var(--ink2);font-size:15.5px;text-wrap:pretty}
+  @media (max-width:900px){.perks{grid-template-columns:1fr}.perk,.perk:not(:nth-child(3n+1)){padding-left:0;border-left:0}}
+
+  /* formats */
+  .formats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--line)}
+  .fmt{padding:28px 24px 32px 0;border-bottom:1px solid var(--line);display:grid;gap:14px;align-content:start}
+  .fmt + .fmt{padding-left:24px;border-left:1px solid var(--line)}
+  .fmt h3{font-family:var(--serif);font-weight:500;font-size:32px;letter-spacing:-.02em;line-height:1.05}
+  .fmt .spec{font-family:var(--mono);font-size:12px;letter-spacing:.06em;color:var(--spark);text-transform:uppercase}
+  .fmt p{color:var(--ink2);font-size:15.5px;text-wrap:pretty}
+  .fmt .eg{font-family:var(--mono);font-size:12.5px;color:var(--mute)}
+  .fmt .eg a{color:var(--ink2);border-bottom:1px solid var(--line2);padding-block:6px}
+  .fmt .eg a:hover{color:var(--ink);border-color:var(--ink)}
+  @media (max-width:860px){.formats{grid-template-columns:1fr}.fmt + .fmt{padding-left:0;border-left:0}}
+
+  /* compare */
+  .table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px}
+  .compare{width:100%;min-width:640px;border-collapse:collapse;font-size:15.5px}
+  .compare th,.compare td{padding:16px 20px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+  .compare tr:last-child th,.compare tr:last-child td{border-bottom:0}
+  .compare thead th{font-family:var(--mono);font-size:12px;font-weight:400;letter-spacing:.1em;text-transform:uppercase;color:var(--ink2);background:var(--bg2)}
+  .compare tbody th{font-weight:500;color:var(--ink);width:24%}
+  .compare td{color:var(--ink2)}
+  .compare .us{background:rgba(242,193,78,.07);color:var(--ink);font-weight:500}
+  .compare thead .us{color:var(--spark);background:rgba(242,193,78,.12)}
+
+  /* process */
+  .steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--line)}
+  .step{padding:24px 20px 28px 0;border-bottom:1px solid var(--line);display:grid;gap:10px;align-content:start}
+  .step + .step{padding-left:20px;border-left:1px solid var(--line)}
+  .step .n{font-family:var(--mono);font-size:12px;letter-spacing:.08em;color:var(--spark)}
+  .step h3{font-size:19px;font-weight:600;letter-spacing:-.01em}
+  .step p{color:var(--ink2);font-size:15px;text-wrap:pretty}
+  @media (max-width:1000px){.steps{grid-template-columns:repeat(2,minmax(0,1fr))}.step:nth-child(odd){padding-left:0;border-left:0}.step:nth-child(even){padding-left:20px;border-left:1px solid var(--line)}}
+  @media (max-width:560px){.steps{grid-template-columns:1fr}.step,.step + .step{padding-left:0;border-left:0}}
+
+  /* pricing */
+  .offers{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+  .offer{border:1px solid var(--line);background:var(--bg2);padding:26px 24px 28px;display:grid;gap:16px;align-content:start;border-radius:10px;position:relative}
+  .offer.hot{border-color:var(--spark)}
+  .offer .flag{position:absolute;top:-11px;left:22px;background:var(--spark);color:#151410;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;padding:4px 8px;border-radius:4px}
+  .offer h3{font-size:17px;font-weight:600;letter-spacing:-.01em}
+  .offer .price{font-family:var(--serif);font-weight:500;font-size:50px;line-height:1;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+  .offer .price small{font-family:var(--mono);font-size:12px;letter-spacing:.06em;color:var(--ink2);margin-left:6px;font-weight:400}
+  .offer p{color:var(--ink2);font-size:14.5px;text-wrap:pretty}
+  .offer ul{display:grid;gap:8px;padding-top:14px;border-top:1px solid var(--line)}
+  .offer li{display:flex;gap:10px;font-size:14px;color:var(--ink)}
+  .offer li svg{width:14px;height:14px;flex:none;margin-top:4px}
+  .terms{margin-top:20px;font-family:var(--mono);font-size:12.5px;color:var(--mute);line-height:1.7;max-width:80ch}
+  @media (max-width:1100px){.offers{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  @media (max-width:560px){.offers{grid-template-columns:1fr}}
+
+  /* about */
+  .about{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:32px 64px;border-top:1px solid var(--line);align-items:start}
+  .about h2{font-family:var(--serif);font-weight:500;font-size:clamp(38px,4.8vw,66px);line-height:.95;letter-spacing:-.03em;margin-top:18px}
+  .about h2 em{font-style:italic;font-weight:400;color:var(--spark)}
+  .about .body p{color:var(--ink2);font-size:18px;line-height:1.6;text-wrap:pretty}
+  .about .body p strong{color:var(--ink);font-weight:500}
+  .facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));margin-top:28px;border-top:1px solid var(--line)}
+  .facts li{display:grid;gap:4px;padding:16px 0;border-bottom:1px solid var(--line);font-size:16px}
+  .facts li:nth-child(even){padding-left:20px;border-left:1px solid var(--line)}
+  .facts li span{font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink2)}
+  .facts a:hover{color:var(--spark)}
+  @media (max-width:860px){.about{grid-template-columns:1fr}}
+
+  /* faq */
+  .faq{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:1px solid var(--line)}
+  .qa{padding:26px 32px 30px 0;border-bottom:1px solid var(--line);display:grid;gap:10px;align-content:start}
+  .qa:nth-child(even){padding-left:32px;padding-right:0;border-left:1px solid var(--line)}
+  .qa h3{font-size:19px;font-weight:600;letter-spacing:-.01em}
+  .qa p{color:var(--ink2);font-size:15.5px;text-wrap:pretty;max-width:60ch}
+  @media (max-width:760px){.faq{grid-template-columns:1fr}.qa:nth-child(even){padding-left:0;border-left:0}}
+
+  /* contact */
+  .contact{border-top:1px solid var(--line);display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:48px;align-items:start}
+  .contact h2{font-family:var(--serif);font-weight:500;font-size:clamp(46px,6.6vw,104px);line-height:.95;letter-spacing:-.035em;margin-top:18px}
+  .contact h2 em{font-style:italic;font-weight:400;color:var(--spark)}
+  .contact .intro{color:var(--ink2);font-size:17px;max-width:48ch;margin-top:22px;text-wrap:pretty}
+  .email{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:28px}
+  .email code{font-family:var(--mono);font-size:clamp(16px,2vw,22px);color:var(--ink);user-select:all;letter-spacing:-.01em}
+  .email button{min-height:44px;font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;border:1px solid var(--line2);padding:9px 14px;border-radius:999px;color:var(--ink2)}
+  .email button:hover{color:var(--ink);border-color:var(--ink)}
+  .brief{display:grid;gap:16px;background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:clamp(20px,3vw,32px)}
+  .brief h3{font-size:19px;font-weight:600;letter-spacing:-.01em}
+  .brief .row2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+  .brief label{display:grid;gap:7px;font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink2)}
+  .brief input,.brief select,.brief textarea{width:100%;min-height:46px;background:var(--bg);border:1px solid var(--line2);border-radius:8px;padding:11px 13px;font-family:var(--body);font-size:16px;letter-spacing:0;text-transform:none;color:var(--ink)}
+  .brief textarea{resize:vertical;min-height:92px}
+  .brief input:focus,.brief select:focus,.brief textarea:focus{outline:2px solid var(--spark);outline-offset:1px;border-color:transparent}
+  .brief .note{font-size:13.5px;color:var(--mute)}
+  .brief .err{font-size:13.5px;color:#F59E8B;min-height:1em}
+  @media (max-width:900px){.contact{grid-template-columns:1fr}}
+  @media (max-width:520px){.brief .row2{grid-template-columns:1fr}}
+
+  /* lightbox */
+  .lb{position:fixed;inset:0;background:rgba(8,8,7,.92);backdrop-filter:blur(10px);display:grid;place-items:center;z-index:50;padding:20px;padding-top:calc(20px + env(safe-area-inset-top,0px));padding-bottom:calc(20px + env(safe-area-inset-bottom,0px))}
+  .lb[hidden]{display:none}
+  .lb .box{position:relative;height:min(88vh,1000px);aspect-ratio:9/16;max-width:100%;border-radius:12px;overflow:hidden;background:#000;box-shadow:0 40px 120px -40px #000}
+  .lb video{width:100%;height:100%;object-fit:contain;display:block;background:#000}
+  .lb .close{position:fixed;top:calc(18px + env(safe-area-inset-top,0px));right:22px;width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);display:grid;place-items:center;color:var(--ink)}
+  .lb .close svg{width:16px;height:16px;stroke:currentColor;stroke-width:1.8;fill:none}
+  .lb .cap{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(22px + env(safe-area-inset-bottom,0px));font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink2);white-space:nowrap}
+
+  @media (prefers-reduced-motion:reduce){.ticker-track{animation:none}.card:hover .frame{transform:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="spark" viewBox="0 0 100 100"><path d="M50 4 L60 40 L96 50 L60 60 L50 96 L40 60 L4 50 L40 40 Z"/></symbol>
+</svg>
+<div class="wrap">
+  <header class="nav">
+    <a class="mark" href="#top" aria-label="Scintova, back to top">
+      <span class="tile" aria-hidden="true"><svg viewBox="0 0 100 100"><path d="M50 8 L58 42 L92 50 L58 58 L50 92 L42 58 L8 50 L42 42 Z" fill="#141310"/></svg></span>
+      <span class="word" aria-hidden="true">sc<span class="i"><b>i</b><span>ı</span><svg viewBox="0 0 100 100"><path d="M50 4 L60 40 L96 50 L60 60 L50 96 L40 60 L4 50 L40 40 Z" fill="#F2C14E"/></svg></span>ntova</span>
+    </a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#included">What you get</a></li>
+        <li><a href="#process">How it works</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#faq">Questions</a></li>
+      </ul>
+    </nav>
+    <a class="cta" href="#contact">Get a free spec ad</a>
+  </header>
+
+  <main id="main">
+  <section class="hero" id="top">
+    <div>
+      <p class="eyebrow"><b>Scintova</b> · AI video ad studio · London</p>
+      <h1>Great video<br>ads, <em>without</em><br>the shoot.</h1>
+      <p class="lede">A shoot means a crew, a studio day, a month of back and forth and a four-figure bill. We make ads from photos of your product instead, and the first one costs you nothing. <strong>If it doesn't look like it was filmed, don't use it.</strong></p>
+      <div class="hero-actions">
+        <a class="cta gold" href="#contact">Get your free spec ad</a>
+        <a class="cta ghost" href="#work">See the work</a>
+      </div>
+      <ul class="proof">
+        <li><svg aria-hidden="true" fill="#F2C14E"><use href="#spark"/></svg>First ad free</li>
+        <li><svg aria-hidden="true" fill="#F2C14E"><use href="#spark"/></svg>Ready in days</li>
+        <li><svg aria-hidden="true" fill="#F2C14E"><use href="#spark"/></svg>Cleared for paid ads</li>
+      </ul>
+    </div>
+    <div class="phone">
+      <img src="reel/pmE_ritual.jpg" alt="Matcha powder being sifted into a black bowl" width="720" height="1280">
+      <video muted playsinline loop preload="none" poster="reel/pmE_ritual.jpg" data-src="reel/pmE_ritual.mp4" aria-label="Five quiet minutes, spec film"></video>
+      <div class="tag"><i></i> Five quiet minutes</div>
+    </div>
+  </section>
+
+  <div class="ticker" aria-hidden="true"><div class="ticker-track" id="ticker">
+    <span>First ad free</span><span>You approve the script</span><span>Ready in days</span><span>No calls, no deck</span><span>Yours to run for 90 days</span><span>Made in London</span>
+  </div></div>
+
+  <section id="work">
+    <div class="sec-head">
+      <h2>Fifteen ads in<br>one weekend</h2>
+      <p>Hyper-cuts, creator-style ads and cinematic films, all made from product photos. Tap any of them to watch with sound.</p>
+    </div>
+    <div class="reel-wrap"><div class="reel" id="reel">
+      <button class="card" type="button" data-src="reel/pmN_crack_pour_go.mp4" data-title="Crack. Pour. Go." data-brand="PerfectTed"><span class="frame"><img src="reel/pmN_crack_pour_go.jpg" alt="" loading="lazy" width="720" height="1280"><video muted playsinline loop preload="none" data-src="reel/pmN_crack_pour_go.mp4"></video><span class="play"><svg viewBox="0 0 12 12"><path d="M1 0v12l11-6z"/></svg></span></span><span class="meta"><span class="t">Crack. Pour. Go.</span><span class="d">0:14</span><span class="b">PerfectTed</span></span></button>
+      <button class="card" type="button" data-src="reel/pmO_just_add_milk.mp4" data-title="Scoop. Shake. Pour." data-brand="PerfectTed"><span class="frame"><img src="reel/pmO_just_add_milk.jpg" alt="" loading="lazy" width="720" height="1280"><video muted playsinline loop preload="none" data-src="reel/pmO_just_add_milk.mp4"></video><span class="play"><svg viewBox="0 0 12 12"><path d="M1 0v12l11-6z"/></svg></span></span><span class="meta"><span class="t">Scoop. Shake. Pour.</span><span class="d">0:15</span><span class="b">PerfectTed</span></span></button>
+      <button class="card" type="button" data-src="reel/pmK_one_press.mp4" data-title="One press" data-brand="PerfectTed"><span class="frame"><img src="reel/pmK_one_press.jpg" alt="" loading="lazy" width="720" height="1280"><video muted playsinline loop preload="none" data-src="reel/pmK_one_press.mp4"></video><span class="play"><svg viewBox="0 0 12 12"><path d="M1 0v12l11-6z"/></svg></span></span><span class="meta"><span class="t">One press</span><span class="d">0:13</span><span class="b">PerfectTed</span></span></button>
+      <button class="card" type="button" data-src="reel/pmG_surreal.mp4" data-title="Big news" data-brand="PerfectTed"><span class="frame"><img src="reel/pmG_surreal.jpg" alt="" loading="lazy" width="720" height="1280"><video muted playsinline loop preload="none" data-src="reel/pmG_surreal.mp4"></video><span class="play"><svg viewBox="0 0 12 12"><path d="M1 0v12l11-6z"/></svg></span></span><span class="meta"><span class="t">Big news</span><span class="d">0:14</span><span class="b">PerfectTed</span></span></button>
+      <button class="card" type="button" data-src="reel/pmE_ritual.mp4" data-title="Five quiet minutes" data-brand="PerfectTed"><span class="frame"><img src="reel/pmE_ritual.jpg" alt="" loading="lazy" width="720" height="1280"><video muted playsinline loop preload="none" data-src="reel/pmE_ritual.mp4"></video><span class="play"><svg viewBox="0 0 12 12"><path d="M1 0v12l11-6z"/></svg></span></span><span class="meta"><span class="t">Five quiet minutes</span><span class="d">0:16</span><span class="b">PerfectTed</span></span></button>
+      <button class="card" type="button" data-src="reel/pmL_hot_matcha_season.mp4" data-title="Hot matcha season" data-brand="PerfectTed"><span class="frame"><img src="reel/pmL_hot_matcha_season.jpg" alt="" loading="lazy" width="720" height="1280"><video muted playsinline loop preload="none" data-src="reel/pmL_hot_matcha_season.mp4"></video><span class="play"><svg viewBox="0 0 12 12"><path d="M1 0v12l11-6z"/></svg></span></span><span class="meta"><span class="t">Hot matcha season</span><span class="d">0:26</span><span class="b">PerfectTed</span></span></button>
+      <button class="card" type="button" data-src="reel/pmM_four_gifts.mp4" data-title="Four gifts, four budgets" data-brand="PerfectTed"><span class="frame"><img src="reel/pmM_four_gifts.jpg" alt="" loading="lazy" width="720" height="1280"><video muted playsinline loop preload="none" data-src="reel/pmM_four_gifts.mp4"></video><span class="play"><svg viewBox="0 0 12 12"><path d="M1 0v12l11-6z"/></svg></span></span><span class="meta"><span class="t">Four gifts, four budgets</span><span class="d">0:28</span><span class="b">PerfectTed</span></span></button>
+      <button class="card" type="button" data-src="reel/pmH_just_add_milk.mp4" data-title="Just add milk" data-brand="PerfectTed"><span class="frame"><img src="reel/pmH_just_add_milk.jpg" alt="" loading="lazy" width="720" height="1280"><video muted playsinline loop preload="none" data-src="reel/pmH_just_add_milk.mp4"></video><span class="play"><svg viewBox="0 0 12 12"><path d="M1 0v12l11-6z"/></svg></span></span><span class="meta"><span class="t">Just add milk</span><span class="d">0:18</span><span class="b">PerfectTed</span></span></button>
+      <button class="card" type="button" data-src="reel/pmJ_matcha_set.mp4" data-title="Matcha at home" data-brand="PerfectTed"><span class="frame"><img src="reel/pmJ_matcha_set.jpg" alt="" loading="lazy" width="720" height="1280"><video muted playsinline loop preload="none" data-src="reel/pmJ_matcha_set.mp4"></video><span class="play"><svg viewBox="0 0 12 12"><path d="M1 0v12l11-6z"/></svg></span></span><span class="meta"><span class="t">Matcha at home</span><span class="d">0:24</span><span class="b">PerfectTed</span></span></button>
+    </div></div>
+    <div class="reel-note">
+      <p>Spec work: we made these to show what we can do. The brands shown didn't commission them.</p>
+      <span class="arrows"><button type="button" id="prev" aria-label="Scroll the reel back"><svg viewBox="0 0 16 16"><path d="M10 3 5 8l5 5"/></svg></button><button type="button" id="next" aria-label="Scroll the reel forward"><svg viewBox="0 0 16 16"><path d="m6 3 5 5-5 5"/></svg></button></span>
+    </div>
+  </section>
+
+  <section id="included">
+    <div class="sec-head">
+      <h2>What you get</h2>
+      <p>Everything a shoot would give you, minus the crew, the studio and the month of waiting.</p>
+    </div>
+    <div class="perks">
+      <div class="perk"><span class="n">01</span><h3>Made from your photos</h3><p>A link to the product and three or four photos. Nothing to post, no studio day to book.</p></div>
+      <div class="perk"><span class="n">02</span><h3>Your real packaging</h3><p>Labels, colours and pack shots are checked frame by frame. A wrong label or a strange hand gets remade, not hidden.</p></div>
+      <div class="perk"><span class="n">03</span><h3>Real people on screen</h3><p>The person in a creator-style ad is a real person who has agreed to appear in ads.</p></div>
+      <div class="perk"><span class="n">04</span><h3>You approve the script</h3><p>You see the idea and every line before anything is made. Change it, or bin it and get another.</p></div>
+      <div class="perk"><span class="n">05</span><h3>Cleared for paid ads</h3><p>Every paid order includes the right to run the ads as paid ads for 90 days on any platform.</p></div>
+      <div class="perk"><span class="n">06</span><h3>No calls, no deck</h3><p>Four emails from brief to finished ad. You deal with the person who makes it.</p></div>
+    </div>
+  </section>
+
+  <section id="formats">
+    <div class="sec-head">
+      <h2>Three kinds of ad</h2>
+      <p>Pick the one that fits where it'll run. Most brands start with a hyper-cut.</p>
+    </div>
+    <div class="formats">
+      <div class="fmt"><span class="spec">For paid social</span><h3>Hyper-cut</h3><p>Fifteen seconds, cut to the beat, the product in every frame. Made for the two seconds you get before a thumb moves on.</p><span class="eg">Watch <a href="#work" data-open="pmN_crack_pour_go">Crack. Pour. Go.</a></span></div>
+      <div class="fmt"><span class="spec">For your feed</span><h3>Talking to camera</h3><p>A real person telling the camera why they'd buy it, with close-ups in between. It reads as a creator post rather than an advert, which is why people watch to the end.</p><span class="eg">Watch <a href="#work" data-open="pmM_four_gifts">Four gifts, four budgets</a></span></div>
+      <div class="fmt"><span class="spec">For your homepage and launch</span><h3>Hero film</h3><p>One cinematic film with light, texture and a single idea. You get widescreen for the site and vertical for the feed from the same film.</p><span class="eg">Watch <a href="#work" data-open="pmL_hot_matcha_season">Hot matcha season</a></span></div>
+    </div>
+  </section>
+
+  <section id="compare">
+    <div class="sec-head">
+      <h2>A shoot, a creator<br>or <em>Scintova</em></h2>
+      <p>What one ad costs you, and what you get for it.</p>
+    </div>
+    <div class="table-wrap">
+      <table class="compare">
+        <thead>
+          <tr><th scope="col"><span class="sr">Compared on</span></th><th scope="col">Studio shoot</th><th scope="col">UK creator</th><th scope="col" class="us">Scintova</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">One ad costs</th><td>Four figures</td><td>£150 to £350</td><td class="us">£100</td></tr>
+          <tr><th scope="row">Running it as a paid ad</th><td>Agreed with the talent</td><td>20 to 40% on top</td><td class="us">Included for 90 days</td></tr>
+          <tr><th scope="row">First ad in</th><td>About a month</td><td>After the product arrives</td><td class="us">A few days</td></tr>
+          <tr><th scope="row">You send</th><td>Product, crew, studio</td><td>The product itself</td><td class="us">A link and 3 or 4 photos</td></tr>
+          <tr><th scope="row">If you don't like it</th><td>Paid either way</td><td>Paid either way</td><td class="us">You don't pay</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="process">
+    <div class="sec-head">
+      <h2>How it works</h2>
+      <p>Four emails and no calls. Most brands see their first finished ad within a few days.</p>
+    </div>
+    <div class="steps">
+      <div class="step"><span class="n">01</span><h3>Send the product</h3><p>A link to it, three or four photos, and anything you're not allowed to claim. That's the whole brief.</p></div>
+      <div class="step"><span class="n">02</span><h3>Approve the script</h3><p>You get the idea and every line before anything is made. Change it, or bin it and we write another.</p></div>
+      <div class="step"><span class="n">03</span><h3>Watch the draft</h3><p>The finished ad with your changes already in. One round on a test pack, two on a hero film.</p></div>
+      <div class="step"><span class="n">04</span><h3>Run it</h3><p>The final files, plus the right to run them as paid ads for 90 days on any platform.</p></div>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <div class="sec-head">
+      <h2>Pricing</h2>
+      <p>A UK creator charges £150 to £350 for one video, then adds 20 to 40 percent if you want to run it as an ad. These prices include the ad rights.</p>
+    </div>
+    <div class="offers">
+      <div class="offer hot"><span class="flag">Start here</span><h3>Your spec ad</h3><div class="price">£100</div><p>The ad we made you for free, delivered clean and cleared for 90 days of paid use. You've already seen it, so there's nothing to guess.</p>
+        <ul><li><svg aria-hidden="true" fill="#F2C14E"><use href="#spark"/></svg>Made before you pay</li><li><svg aria-hidden="true" fill="#F2C14E"><use href="#spark"/></svg>90 days of paid use</li></ul></div>
+      <div class="offer"><h3>Test pack</h3><div class="price">£249</div><p>Three ads with three different angles, so you find out which one sells before you spend real money on media.</p>
+        <ul><li><svg aria-hidden="true" fill="#F2C14E"><use href="#spark"/></svg>Three angles</li><li><svg aria-hidden="true" fill="#F2C14E"><use href="#spark"/></svg>One round of changes</li></ul></div>
+      <div class="offer"><h3>Monthly</h3><div class="price">£690<small>/ month</small></div><p>Ten ads a month, each batch built on whichever of last month's worked. For brands that post every day.</p>
+        <ul><li><svg aria-hidden="true" fill="#F2C14E"><use href="#spark"/></svg>Ten ads a month</li><li><svg aria-hidden="true" fill="#F2C14E"><use href="#spark"/></svg>Built on last month's winners</li></ul></div>
+      <div class="offer"><h3>Hero film</h3><div class="price"><small style="margin:0 6px 0 0">from</small>£450</div><p>A cinematic product film in widescreen and vertical, two rounds of changes, and no shoot day to book.</p>
+        <ul><li><svg aria-hidden="true" fill="#F2C14E"><use href="#spark"/></svg>Widescreen and vertical</li><li><svg aria-hidden="true" fill="#F2C14E"><use href="#spark"/></svg>Two rounds of changes</li></ul></div>
+    </div>
+    <p class="terms">Half upfront, half when you're happy. Keep running an ad past 90 days for 30 percent more. Full terms are <a href="terms.html" style="color:var(--ink2);border-bottom:1px solid var(--line2)">here</a>.</p>
+  </section>
+
+  <section class="about" id="about">
+    <div>
+      <p class="eyebrow"><b>Who makes the ads</b></p>
+      <h2>One person,<br><em>no</em> account managers.</h2>
+    </div>
+    <div class="body">
+      <p>Scintova is <strong>Bohan Sun</strong>, in London. He makes the ads and reads every email himself, so the person you brief is the person doing the work. There's no account manager and no sales team.</p>
+      <ul class="facts">
+        <li><span>Based in</span>London, UK</li>
+        <li><span>Replies</span>The same day</li>
+        <li><span>Email</span><a href="mailto:hello@scintova.com">hello@scintova.com</a></li>
+        <li><span>Instagram and TikTok</span><a href="https://www.instagram.com/scintova/" target="_blank" rel="noopener">@scintova</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="sec-head">
+      <h2>Questions people ask</h2>
+      <p>If yours isn't here, email and you'll get a straight answer the same day.</p>
+    </div>
+    <div class="faq">
+      <div class="qa"><h3>Is it really made with AI?</h3><p>Yes, and we'd rather you knew. The product is yours: we work from your photos and your real packaging. The person on screen is a real person who has agreed to appear in ads. What the AI replaces is the crew, the studio and the month.</p></div>
+      <div class="qa"><h3>Will it look fake?</h3><p>Look at the reel and decide for yourself. A wrong label, a strange hand or a face that's off gets remade, not hidden. If we can't make your product look right, we'll say so before you've spent anything.</p></div>
+      <div class="qa"><h3>Do I have to send you the product?</h3><p>No. Good photos are enough. If it's something unusual we might ask you to post one over.</p></div>
+      <div class="qa"><h3>How long does it take?</h3><p>A spec ad usually comes back within a few days. A test pack takes about a week, most of which is waiting for you to sign off the scripts.</p></div>
+      <div class="qa"><h3>What if I don't like it?</h3><p>Then you don't pay for it. The spec ad costs nothing until you decide to use it, and every paid order includes changes.</p></div>
+      <div class="qa"><h3>Can I run the ads on Meta, TikTok and YouTube?</h3><p>Yes. Every paid order includes the right to run the ads as paid ads for 90 days on any platform.</p></div>
+      <div class="qa"><h3>What if I want to run one for longer?</h3><p>Keep running an ad past 90 days for 30 percent more. Just email and say which one.</p></div>
+      <div class="qa"><h3>Who am I dealing with?</h3><p>Bohan Sun. He's in London, he reads every email, and he makes the ads. There's no account manager and no sales team.</p></div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div>
+      <p class="eyebrow"><b>hello@scintova.com</b></p>
+      <h2>Send us a product.<br><em>We'll send you an ad.</em></h2>
+      <p class="intro">Email a link to what you sell. Within a day you'll have an idea back, and if you like it, an ad follows. If you like that too, it's £100. If not, you've lost nothing but an email.</p>
+      <div class="email"><code id="email">hello@scintova.com</code><button type="button" id="copy">Copy</button></div>
+    </div>
+    <form class="brief" id="brief" novalidate>
+      <h3>Start your free spec ad</h3>
+      <div class="row2">
+        <label>Your name<input name="name" autocomplete="name" required></label>
+        <label>Brand<input name="brand" autocomplete="organization"></label>
+      </div>
+      <label>Link to the product<input name="link" type="url" inputmode="url" placeholder="https://"></label>
+      <label>What you'd like
+        <select name="want">
+          <option>A free spec ad</option>
+          <option>Test pack, 3 ads (£249)</option>
+          <option>Monthly, 10 ads (£690)</option>
+          <option>Hero film (from £450)</option>
+        </select>
+      </label>
+      <label>Anything you can't claim, or must say<textarea name="notes" rows="3"></textarea></label>
+      <p class="err" id="briefErr" role="alert"></p>
+      <button class="cta gold" type="submit">Email my brief</button>
+      <p class="note">This opens your email app with the brief filled in. Attach three or four product photos before you send.</p>
+    </form>
+  </section>
+  </main>
+
+  <footer>
+    <div>
+      <a class="mark" href="#top" aria-label="Scintova, back to top">
+        <span class="tile" aria-hidden="true"><svg viewBox="0 0 100 100"><path d="M50 8 L58 42 L92 50 L58 58 L50 92 L42 58 L8 50 L42 42 Z" fill="#141310"/></svg></span>
+        <span class="word" aria-hidden="true">sc<span class="i"><b>i</b><span>ı</span><svg viewBox="0 0 100 100"><path d="M50 4 L60 40 L96 50 L60 60 L50 96 L40 60 L4 50 L40 40 Z" fill="#F2C14E"/></svg></span>ntova</span>
+      </a>
+      <p class="tag">Great video ads, without the shoot.</p>
+    </div>
+    <nav aria-label="Footer">
+      <a href="#work">Work</a>
+      <a href="#pricing">Pricing</a>
+      <a href="https://www.instagram.com/scintova/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.tiktok.com/@scintova" target="_blank" rel="noopener">TikTok</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+    <div class="legal">
+      <p>© 2026 Scintova, London. The ads on this site are spec work. We made them to show what we can do, and the brands shown didn't commission them.</p>
+      <span>scintova.com</span>
+    </div>
+  </footer>
+</div>
+
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Video player">
+  <button type="button" class="close" id="lbClose" aria-label="Close video"><svg viewBox="0 0 16 16"><path d="M3 3l10 10M13 3 3 13"/></svg></button>
+  <div class="box"><video id="lbVideo" controls playsinline preload="auto"></video></div>
+  <div class="cap" id="lbCap"></div>
+</div>
+
+<script src="assets/site.js" defer></script>
+</body>
+</html>
